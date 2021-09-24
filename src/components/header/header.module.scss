@@ -1,0 +1,42 @@
+.wrapper {
+  background-color: var(--color-background);
+  padding-top: 15px;
+  padding-bottom: 14px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+// .nav {
+  
+// }
+
+.list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.item {
+  margin-right: 68px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.link {
+  display: block;
+}
