@@ -1,7 +1,7 @@
 .wrapper {
   background-color: var(--color-background);
-  padding-top: 15px;
-  padding-bottom: 14px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .container {
@@ -9,16 +9,17 @@
   width: 100%;
   min-width: 1024px;
   max-width: 1200px;
-  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 18px;
+  padding-right: 17px;
 }
 
 .list {
   list-style: none;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
   font-weight: 600;
@@ -26,7 +27,7 @@
 }
 
 .item {
-  margin-right: 68px;
+  margin-right: 0;
 
   &:last-child {
     margin-right: 0;

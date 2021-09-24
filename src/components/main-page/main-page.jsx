@@ -1,11 +1,14 @@
 import React from 'react';
 import Header from '../header/header';
-//import styles from './main-page.module.scss';
+import Footer from '../footer/footer';
+import styles from './main-page.module.scss';
 
 function MainPage() {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <Header />
+      <main></main>
+      <Footer />
     </div>
   );
 }
