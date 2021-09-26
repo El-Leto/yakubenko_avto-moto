@@ -6,7 +6,7 @@ function Logo() {
   return (
     <div>
       <a href="/" className={styles.link}>
-        <img src={logo} alt="Avto-moto logo" width="134" height="55"/>
+        <img src={logo} alt="Auto-moto logo" width="134" height="55"/>
       </a>
     </div>
   );

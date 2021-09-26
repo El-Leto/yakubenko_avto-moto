@@ -4,3 +4,11 @@
   margin: 0 auto;
   min-height: 100vh;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 650px 1fr;
+  margin: 0 auto;
+  min-width: 1024px;
+  max-width: 1200px;
+}
