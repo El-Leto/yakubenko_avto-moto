@@ -1,0 +1,49 @@
+.container {
+  padding-left: 15px;
+}
+
+// .buttons {
+//   margin-bottom: 23px;
+// }
+
+.button {
+  width: 195px;
+  padding-top: 10px;
+  padding-right: 19px;
+  padding-bottom: 11px;
+  padding-left: 19px;
+  display: inline-block;
+  font-family: 'Open-Sans', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  color: var(--color-text);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+
+  &:hover {
+    color: var(--color-white);
+    background-color: var(--color-bright);
+    border: 1px solid var(--color-bright);
+  }
+
+  &:active {
+    color: var(--color-white);
+    background-color: var(--color-bright);
+    border: 1px solid var(--color-bright);
+  }
+
+  &_active {
+    color: var(--color-white);
+    background-color: var(--color-bright);
+    border: 1px solid var(--color-bright);
+
+    &:hover {
+      background-color: var(--color-dark-bright);
+    }
+  
+    &:active {
+      background-color: var(--color-dark-bright);
+    }
+  }
+}

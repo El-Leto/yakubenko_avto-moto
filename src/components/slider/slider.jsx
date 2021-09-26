@@ -3,9 +3,8 @@ import cn from 'classnames';
 import auto1 from '../../images/auto1.jpg';
 import auto2 from '../../images/auto2.jpg';
 import auto3 from '../../images/auto3.jpg';
+import { DEFAULT_SLIDE } from '../../const';
 import styles from './slider.module.scss';
-
-const DEFAULT_SLIDE = 0;
 
 const slides = [auto1, auto2, auto3];
 
