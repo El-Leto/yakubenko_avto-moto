@@ -5,9 +5,21 @@
   min-height: 100vh;
 }
 
+.slider {
+  grid-area: slider;
+}
+
+.info {
+  grid-area: info;
+}
+
+.tabs {
+  grid-area: tabs;
+}
+
 .container {
-  display: grid;
-  grid-template-columns: 650px 1fr;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   min-width: 1024px;
   max-width: 1200px;

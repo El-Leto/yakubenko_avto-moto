@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  padding-top: 25px;
+}
+
+.list {
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  padding-bottom: 9px;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--color-black);
+  margin: 0;
+}
+
+.map {
+  box-sizing: content-box;
+  padding-top: 5px;
+  width: 431px;
+  height: 271px;
+}
+
+.contacts {
+  margin-right: 103px;
+}

@@ -13,9 +13,9 @@ function MainPage() {
       <main>
         <h1 className="visually-hidden">Автомобиль Марпех 11</h1>
         <section className={styles.container}>
-          <Slider />
-          <Info />
-          <Tabs />
+          <Slider className={styles.sliders}/>
+          <Info className={styles.info}/>
+          <Tabs className={styles.tabs}/>
         </section>
       </main>
       <Footer />
