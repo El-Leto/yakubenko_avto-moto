@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+}
+
+.button {
+  display: inline-block;
+  position: absolute;
+  right: 18px;
+  top: 30px;
+  padding-top: 15px;
+  padding-right: 17px;
+  padding-bottom: 16px;
+  padding-left: 19px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  font-family: 'Open-Sans', Arial, sans-serif;
+  color: var(--color-bright);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-bright);
+
+  &:hover {
+    cursor: pointer;
+    color: var(--color-white);
+    background-color: var(--color-bright);
+    border: 1px solid var(--color-bright);
+  }
+
+  &:active {
+    cursor: pointer;
+    color: var(--color-white);
+    background-color: var(--color-bright);
+    border: 1px solid var(--color-bright);
+  }
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  margin-bottom: 140px;
+}

@@ -18,27 +18,32 @@
   border: 1px solid var(--color-border);
 
   &:hover {
+    cursor: pointer;
     color: var(--color-white);
     background-color: var(--color-bright);
     border: 1px solid var(--color-bright);
   }
 
   &:active {
+    cursor: pointer;
     color: var(--color-white);
     background-color: var(--color-bright);
     border: 1px solid var(--color-bright);
   }
 
   &_active {
+    cursor: pointer;
     color: var(--color-white);
     background-color: var(--color-bright);
     border: 1px solid var(--color-bright);
 
     &:hover {
+      cursor: pointer;
       background-color: var(--color-dark-bright);
     }
   
     &:active {
+      cursor: pointer;
       background-color: var(--color-dark-bright);
     }
   }
