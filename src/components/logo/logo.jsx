@@ -4,10 +4,8 @@ import styles from './logo.module.scss';
 
 function Logo() {
   return (
-    <div>
-      <a className={styles.link}>
-        <img src={logo} alt="Auto-moto logo" width="134" height="55"/>
-      </a>
+    <div className={styles.logo}>
+      <img src={logo} alt="Auto-moto logo" width="134" height="55"/>
     </div>
   );
 }
