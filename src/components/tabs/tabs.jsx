@@ -29,6 +29,7 @@ function Tabs() {
               onClick={() => {
                 handleButtonClick(tab);
               }}
+              aria-label="{tab}"
             >
               {tab}
             </button>

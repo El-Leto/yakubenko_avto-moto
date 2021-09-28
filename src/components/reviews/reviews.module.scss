@@ -2,8 +2,7 @@
   position: relative;
 }
 
-.button {
-  display: inline-block;
+.review {
   position: absolute;
   right: 18px;
   top: 30px;
@@ -11,11 +10,6 @@
   padding-right: 17px;
   padding-bottom: 16px;
   padding-left: 19px;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 19px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
   font-family: 'Open-Sans', Arial, sans-serif;
   color: var(--color-bright);
   background-color: var(--color-white);

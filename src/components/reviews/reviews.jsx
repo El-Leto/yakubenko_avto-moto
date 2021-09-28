@@ -1,15 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import cn from 'classnames';
 import Review from '../review/review';
+import Modal from '../modal/modal';
 import styles from './reviews.module.scss';
 
 function Reviews() {
 
   const reviews = useSelector((state) => state.reviews);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const onButtonClick = (evt) => {
+    evt.preventDefault();
+
+    setIsModalOpen(true);
+  };
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight = '17px';
+    }
+
+    if (!isModalOpen) {
+      document.body.style.overflow = 'unset';
+      document.body.style.paddingRight = '0';
+    }
+  }, [isModalOpen]);
+
   return (
     <div className={styles.container}>
-      <a className={styles.button} href="/">
+      <a
+        className={cn('button', styles.review)}
+        href="/"
+        onClick={onButtonClick}
+      >
         Оставить отзыв
       </a>
       <ul className={styles.list}>
@@ -19,6 +45,7 @@ function Reviews() {
           ))
         }
       </ul>
+      {isModalOpen && <Modal isOpen={isModalOpen} onModalOpen={setIsModalOpen}/>}
     </div>
   );
 }

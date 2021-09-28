@@ -25,8 +25,8 @@ function Review({ review }) {
         <p className={styles.title}>Комментарий</p>
         <p className={styles.desc}>{comment}</p>
       </div>
-      <div className={styles.rating}>
-        <div className={styles.active}>
+      <div className={styles.container}>
+        <div className={styles.rating}>
           <span className="visually-hidden">Rating</span>
           <span style={{width: placeRating}} className={styles.stars}></span>
         </div>
@@ -34,7 +34,13 @@ function Review({ review }) {
       </div>
       <div>
         <time dateTime={new Date()} className={styles.time}>1 минуту назад</time>
-        <button type="button" className={styles.reply}>Ответить</button>
+        <button
+          type="button"
+          className={styles.reply}
+          aria-label="Ответить"
+        >
+        Ответить
+        </button>
       </div>
     </li>
   );

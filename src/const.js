@@ -1,5 +1,7 @@
 export const DEFAULT_SLIDE = 0;
 
+export const MIN_LENGTH = 1;
+
 export const DEFAULT_TAB = 'Характеристики';
 
 export const TabItems = {

@@ -42,6 +42,7 @@ function Slider() {
           className={cn(styles.button, styles.button_left)}
           onClick={handlePreviousButtonClick}
           disabled={selectedSlide === 0}
+          aria-label="Назад"
         >
         </button>
         <img
@@ -69,6 +70,7 @@ function Slider() {
           className={styles.button}
           onClick={handleNextButtonClick}
           disabled={selectedSlide === slides.length - 1}
+          aria-label="Вперед"
         >
         </button>
       </div>

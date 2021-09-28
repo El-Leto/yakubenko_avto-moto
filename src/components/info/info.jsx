@@ -17,8 +17,8 @@ function Info() {
         <span className={styles.old_price}>2 400 000 &#8381;</span>
       </div>
       <div className={styles.buttons}>
-        <a className={cn(styles.button, styles.request)} href="/">Оставить заявку</a>
-        <a className={cn(styles.button, styles.credit)} href="/">В кредит от 11 000 &#8381;</a>
+        <a className={cn('button', styles.request)} href="/">Оставить заявку</a>
+        <a className={cn('button', styles.credit)} href="/">В кредит от 11 000 &#8381;</a>
       </div>
     </div>
   );
