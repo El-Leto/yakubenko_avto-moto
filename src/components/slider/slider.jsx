@@ -44,6 +44,7 @@ function Slider() {
           disabled={selectedSlide === 0}
           aria-label="Назад"
         >
+          <span className='visually-hidden'>Кнопка слайдера назад</span>
         </button>
         <img
           className={styles.slide}
@@ -72,6 +73,7 @@ function Slider() {
           disabled={selectedSlide === slides.length - 1}
           aria-label="Вперед"
         >
+          <span className='visually-hidden'>Кнопка слайдера вперед</span>
         </button>
       </div>
     </div>

@@ -1,16 +1,16 @@
-export const DEFAULT_SLIDE = 0;
+const DEFAULT_SLIDE = 0;
 
-export const MIN_LENGTH = 1;
+const MIN_LENGTH = 1;
 
-export const DEFAULT_TAB = 'Характеристики';
+const DEFAULT_TAB = 'Характеристики';
 
-export const TabItems = {
+const TabItem = {
   SPECIFICATIONS: 'Характеристики',
   REVIEWS: 'Отзывы',
   CONTACTS: 'Контакты',
 };
 
-export const specifications = {
+const specifications = {
   'Трансмиссия': 'Роботизированная',
   'Мощность двигателя, л.с.': '249',
   'Тип двигателя': 'Бензиновый',
@@ -20,3 +20,4 @@ export const specifications = {
   'Количество цилиндров': '4',
 };
 
+export { DEFAULT_SLIDE,  MIN_LENGTH, DEFAULT_TAB, TabItem, specifications };

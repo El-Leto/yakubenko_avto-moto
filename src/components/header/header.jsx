@@ -3,7 +3,6 @@ import Logo from '../logo/logo';
 import styles from './header.module.scss';
 
 function Header() {
-
   return (
     <header className={styles.wrapper}>
       <div className={styles.container}>

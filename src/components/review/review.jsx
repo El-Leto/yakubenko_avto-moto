@@ -4,7 +4,6 @@ import cn from 'classnames';
 import { getRatingInPercent } from '../../utils';
 import styles from './review.module.scss';
 
-
 function Review({ review }) {
   const {name, good, bad, comment, rating} = review;
 
@@ -33,7 +32,7 @@ function Review({ review }) {
         <span className={styles.text}>Советует</span>
       </div>
       <div>
-        <time dateTime={new Date()} className={styles.time}>1 минуту назад</time>
+        <time dateTime={(new Date()).toJSON()} className={styles.time}>1 минуту назад</time>
         <button
           type="button"
           className={styles.reply}

@@ -8,7 +8,7 @@ import { addReview } from '../../store/action';
 import { MIN_LENGTH } from '../../const';
 import styles from './modal.module.scss';
 
-const Inputs = {
+const Input = {
   NAME: 'name',
   GOOD: 'good',
   BAD: 'bad',
@@ -19,11 +19,11 @@ const Inputs = {
 function Modal({ isOpen, onModalOpen }) {
   const storage = localStorage.getItem('form');
   const initState = storage ? JSON.parse(storage) : {
-    [Inputs.NAME]: '',
-    [Inputs.GOOD]: '',
-    [Inputs.BAD]: '',
-    [Inputs.COMMENT]: '',
-    [Inputs.RATING]: 0,
+    [Input.NAME]: '',
+    [Input.GOOD]: '',
+    [Input.BAD]: '',
+    [Input.COMMENT]: '',
+    [Input.RATING]: 0,
   };
 
   const [form, setForm] = useState(initState);
@@ -47,15 +47,15 @@ function Modal({ isOpen, onModalOpen }) {
   const handleRatingChange = (value) => {
     setForm({
       ...form,
-      [Inputs.RATING]: value,
+      [Input.RATING]: value,
     });
   };
 
   const handleButtonClick = (evt) => {
     evt.preventDefault();
 
-    const name = form[Inputs.NAME];
-    const comment = form[Inputs.COMMENT];
+    const name = form[Input.NAME];
+    const comment = form[Input.COMMENT];
 
     const isNameValid = name.trim().length >= MIN_LENGTH;
     const isCommentValid = comment.trim().length >= MIN_LENGTH;
@@ -113,8 +113,8 @@ function Modal({ isOpen, onModalOpen }) {
               <input
                 type="text"
                 className={styles.input}
-                name={Inputs.NAME}
-                value={form[Inputs.NAME]}
+                name={Input.NAME}
+                value={form[Input.NAME]}
                 placeholder="Имя"
                 aria-label="Имя"
                 onChange={handleInputChange}
@@ -126,8 +126,8 @@ function Modal({ isOpen, onModalOpen }) {
               <input
                 type="text"
                 className={styles.input}
-                name={Inputs.GOOD}
-                value={form[Inputs.GOOD]}
+                name={Input.GOOD}
+                value={form[Input.GOOD]}
                 placeholder="Достоинства"
                 aria-label="Достоинства"
                 onChange={handleInputChange}
@@ -138,8 +138,8 @@ function Modal({ isOpen, onModalOpen }) {
               <input
                 type="text"
                 className={styles.input}
-                name={Inputs.BAD}
-                value={form[Inputs.BAD]}
+                name={Input.BAD}
+                value={form[Input.BAD]}
                 placeholder="Недостатки"
                 aria-label="Недостатки"
                 onChange={handleInputChange}
@@ -155,7 +155,7 @@ function Modal({ isOpen, onModalOpen }) {
                 count={5}
                 size={35}
                 color2={'#d12136'}
-                value={form[Inputs.RATING]}
+                value={form[Input.RATING]}
                 half={false}
                 onChange={(value) => handleRatingChange(value)}
               />
@@ -167,8 +167,8 @@ function Modal({ isOpen, onModalOpen }) {
               <label>
                 <textarea
                   className={styles.textarea}
-                  name={Inputs.COMMENT}
-                  value={form[Inputs.COMMENT]}
+                  name={Input.COMMENT}
+                  value={form[Input.COMMENT]}
                   placeholder="Комментарий"
                   aria-label="Комментарий"
                   cols='20'

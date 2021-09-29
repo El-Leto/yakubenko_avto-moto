@@ -11,7 +11,7 @@ function Reviews() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const onButtonClick = (evt) => {
+  const handleButtonClick = (evt) => {
     evt.preventDefault();
 
     setIsModalOpen(true);
@@ -34,7 +34,7 @@ function Reviews() {
       <a
         className={cn('button', styles.review)}
         href="/"
-        onClick={onButtonClick}
+        onClick={handleButtonClick}
       >
         Оставить отзыв
       </a>

@@ -2,7 +2,7 @@ import React from 'react';
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
 import pinIcon from '../../images/pin.svg';
 
-const LocationOptions = {
+const LocationOption = {
   CENTER_LOCATION: [59.968137, 30.316272],
   MARKER_LOCATION: [59.968700, 30.312315],
   ZOOM: 15,
@@ -10,7 +10,7 @@ const LocationOptions = {
   HEIGHT: '100%',
 };
 
-const PlacemarkOptions = {
+const PlacemarkOption = {
   iconLayout: 'default#image',
   iconImageHref: pinIcon,
   iconImageSize: [34, 42],
@@ -20,8 +20,8 @@ function YandexMap() {
 
   return (
     <YMaps>
-      <Map width={LocationOptions.WIDTH} height={LocationOptions.HEIGHT} defaultState={{ center: LocationOptions.CENTER_LOCATION, zoom: LocationOptions.ZOOM }}>
-        <Placemark geometry={LocationOptions.MARKER_LOCATION} options={PlacemarkOptions} />
+      <Map width={LocationOption.WIDTH} height={LocationOption.HEIGHT} defaultState={{ center: LocationOption.CENTER_LOCATION, zoom: LocationOption.ZOOM }}>
+        <Placemark geometry={LocationOption.MARKER_LOCATION} options={PlacemarkOption} />
       </Map>
     </YMaps>
   );
