@@ -1,3 +1,7 @@
+.container {
+  max-width: 374px;
+}
+
 .title {
   font-size: 30px;
   line-height: 41px;
@@ -86,6 +90,7 @@
 
 .prices {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 37px;
 }

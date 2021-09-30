@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactModal from 'react-modal';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import ReactStars from 'react-stars';
+import ReactStars from 'react-rating-stars-component';
 import cn from 'classnames';
 import { addReview } from '../../store/action';
 import { MIN_LENGTH } from '../../const';
@@ -151,7 +151,8 @@ function Modal({ isOpen, onModalOpen }) {
             <div className={styles.rating}>
               <span className={styles.rating_title}>Оцените товар:</span>
               <ReactStars
-                className={styles.stars}
+                classNames={styles.stars}
+                a11y
                 count={5}
                 size={35}
                 color2={'#d12136'}

@@ -4,7 +4,7 @@ import styles from './info.module.scss';
 
 function Info() {
   return (
-    <div>
+    <div className={styles.container}>
       <h2 className={styles.title}>Марпех 11</h2>
       <ul className={styles.list}>
         <li className={cn(styles.item, styles.gas)}>бензин</li>
