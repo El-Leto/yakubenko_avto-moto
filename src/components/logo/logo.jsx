@@ -4,7 +4,7 @@ import styles from './logo.module.scss';
 
 function Logo() {
   return (
-    <div className={styles.logo}>
+    <div className={styles.container}>
       <img src={logo} alt="Auto-moto logo" width="134" height="55"/>
     </div>
   );

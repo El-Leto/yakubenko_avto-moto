@@ -155,7 +155,7 @@ function Modal({ isOpen, onModalOpen }) {
                 a11y
                 count={5}
                 size={35}
-                color2={'#d12136'}
+                activeColor="#d12136"
                 value={form[Input.RATING]}
                 half={false}
                 onChange={(value) => handleRatingChange(value)}
