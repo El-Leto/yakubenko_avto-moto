@@ -35,6 +35,10 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @media (max-width: 1023px) {
+    display: none
+  }
 }
 
 .bad {
@@ -51,6 +55,10 @@
     background-image: url('../../images/minus.svg');
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media (max-width: 1023px) {
+    display: none
   }
 }
 

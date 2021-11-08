@@ -68,7 +68,7 @@ function Slider() {
           height="80"
         />
         <button
-          className={styles.button}
+          className={cn(styles.button, styles.button_right)}
           onClick={handleNextButtonClick}
           disabled={selectedSlide === slides.length - 1}
           aria-label="Вперед"

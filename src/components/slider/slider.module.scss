@@ -6,6 +6,24 @@
   box-sizing: content-box;
   margin-bottom: 90px;
   margin-right: 41px;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+    margin-bottom: 59px;
+    margin-right: 21px;
+    margin-left: 21px;
+    margin-top: 21px;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  @media (max-width: 767px) {
+    position: relative;
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-top: 20px;
+    margin-bottom: 19px;
+  }
 }
 
 .pin {
@@ -23,18 +41,48 @@
   padding-right: 28px;
   padding-bottom: 9px;
   padding-left: 27px;
+
+  @media (max-width: 1023px) {
+    top: 0;
+    left: 0;
+  }
+
+  @media (max-width: 767px) {
+    top: 0;
+    left: 0;
+  }
 }
 
 .image {
   display: block;
   width: 600px;
   margin-bottom: 39px;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 0;
+  }
 }
 
 .slider {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1023px) {
+    width: 598px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    //flex-wrap: wrap;
+    position: absolute;
+    top: 40%;
+  }
 }
 
 .button {
@@ -60,9 +108,19 @@
     opacity: 0.3;
     cursor: default;
   }
-}
 
+  @media (max-width: 767px) {
+    margin-right: 0;
+    margin-left: 0;
+    width: 30px;
+    height: 30px;
+  }
+}
 
 .slide {
   width: 128px;
+
+  @media (max-width: 767px) {
+    display: none;  
+  }
 }

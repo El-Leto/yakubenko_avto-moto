@@ -1,5 +1,21 @@
 .container {
   padding-left: 15px;
+
+  @media (max-width: 1023px) {
+    padding-left: 21px;
+    padding-right: 21px;
+    width: 100%;
+  }
+}
+
+.buttons {
+  @media (max-width: 1023px) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .button {
@@ -46,5 +62,15 @@
       cursor: pointer;
       background-color: var(--color-dark-bright);
     }
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 5px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    width: auto;
   }
 }

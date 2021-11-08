@@ -2,6 +2,11 @@
   display: flex;
   padding-top: 25px;
   margin-bottom: 80px;
+
+  @media (max-width: 767px)  {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
 }
 
 .list {
@@ -35,9 +40,22 @@
   padding-top: 5px;
   width: 431px;
   height: 271px;
+
+  @media (max-width: 1023px) {
+    width: 283px;
+    height: 283px;
+  }
 }
 
 .contacts {
   margin-right: 103px;
   max-width: 245px;
+
+  @media (max-width: 1023px) {
+    margin-right: 60px;
+  }
+
+  @media (max-width: 767px)  {
+    margin-right: 0;
+  }
 }

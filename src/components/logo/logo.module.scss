@@ -2,4 +2,15 @@
   display: block;
   height: 55px;
   flex-shrink: 0;
+
+  @media (max-width: 1023px) {
+    align-self: flex-start;
+    padding-left: 21px;
+    padding-bottom: 10px;
+    box-sizing: content-box;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 10px;
+  }
 }
