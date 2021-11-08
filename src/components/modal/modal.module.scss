@@ -7,6 +7,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
+
+  @media (max-width: 767px) {
+    width: 320px;
+    height: 638px;
+  }
 }
 
 .header {
@@ -70,6 +75,10 @@
 
 .comment {
   margin-left: 27px;
+
+  @media (max-width: 767px) {
+    margin-left: 0;
+  }
 }
 
 .input {
